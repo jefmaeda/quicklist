@@ -1,0 +1,19 @@
+button{
+  all: unset;
+  cursor: pointer;
+  border-radius: 12px;
+  background-color: var(--color-brand);
+
+  width: 100%;
+  text-align: center;
+  padding-block: 1rem;
+
+  color: var(--always-white);
+  font: var(--fw-lg) var(--fs-mid)/20px var(--ff-inter);
+
+  transition: background-color 300ms;
+
+  &:hover{
+    background-color: var(--color-brand-hover);
+  }
+}

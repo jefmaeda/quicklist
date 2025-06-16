@@ -18,6 +18,7 @@
   --color-brand: #CA3884;
   --color-brand-hover: #A52C6B;
   --color-danger: #C93847;
+  --always-white: #fff;
 
   /* border */
   --border-primary: #D1D5DB;
@@ -32,3 +33,7 @@
   --fs-mid: 1rem;
   --fs-sm: .875rem;
 }
+
+/* body{
+  background-color: #A52C6B;
+} */
