@@ -1,0 +1,28 @@
+
+.flex{
+  display: flex;
+}
+
+.container{
+  width: min(24em, 100% - 32px*2);
+  border: solid;
+  margin-inline: auto;
+  margin-top: 32px;
+}
+
+.desktop-only{
+  display: none;
+}
+
+
+@media (width >= 80em){
+
+  .container{
+    max-width: 39em;
+    width: 100%;
+  }
+
+  .desktop-only{
+    display: block;
+  }
+}

@@ -34,6 +34,13 @@
   --fs-sm: .875rem;
 }
 
-/* body{
-  background-color: #A52C6B;
-} */
+body{
+  background-color: var(--bg-primary);
+}
+
+a{
+  text-decoration: none;
+  color: var(--color-brand);
+  font: var(--fw-mid) var(--fs-sm)/1rem var(--ff-inter);
+}
+
