@@ -1,1 +1,9 @@
 @import url(fields/index.css);
+
+form{
+  & label{
+    display: block;
+    margin-block: 1rem 2.75rem;
+    font: var(--fw-xl) var(--fs-xl)/2rem var(--ff-inter);
+  }
+}

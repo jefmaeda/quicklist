@@ -6,8 +6,11 @@ input[type="text"]{
   border: solid 2px var(--border-primary);
   border-radius: 12px;
   padding: 11px 8px;
+  height: 44px;
 
-  /* color: var(--content-tertiary); */
+  &::placeholder{
+    font: var(--fw-mid) var(--fs-mid)/1.4 var(--ff-inter);
+  }
 
   &:hover{
   border: solid 2px var(--border-hover);

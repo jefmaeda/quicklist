@@ -3,11 +3,18 @@
   display: flex;
 }
 
+.grid{
+  display: grid;
+}
+
+.gap-1rem{
+  gap: 1rem;
+}
+
 .container{
-  width: min(24em, 100% - 32px*2);
-  border: solid;
+  width: min(24em, 100% - 2rem*2);
   margin-inline: auto;
-  margin-top: 32px;
+  padding-block: 32px;
 }
 
 .desktop-only{
@@ -24,5 +31,9 @@
 
   .desktop-only{
     display: block;
+  }
+
+  .desktop-cols{
+    grid-template-columns: 2fr 1fr;
   }
 }
