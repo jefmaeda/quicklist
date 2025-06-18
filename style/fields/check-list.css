@@ -1,0 +1,9 @@
+#check-lists{
+  display: none;
+  margin-top: 2rem;
+}
+
+#check-lists.show-list{
+  display: block;
+}
+

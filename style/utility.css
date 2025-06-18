@@ -3,6 +3,10 @@
   display: flex;
 }
 
+.space{
+  justify-content: space-between;
+}
+
 .grid{
   display: grid;
 }
