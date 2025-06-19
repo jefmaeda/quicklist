@@ -19,6 +19,9 @@ document.addEventListener("click", (e) => {
     const list = e.target.closest(".list")
 
     // Remove a list especifica
-    if (list) list.remove()
+    if (list) {
+      list.remove()
+      
+    }
   }
 })

@@ -1,7 +1,27 @@
 #check-lists{
   display: none;
   margin-top: 2rem;
+
+  background-color: var(--bg-secondary);
+  border-radius: 12px;
+  padding: .5rem;
+  border: solid;
+
+  & .list .flex{
+    align-items: center;
+    gap: 12px;
+    
+    & .item-name{
+      font: var(--fw-lg) var(--fs-mid)/24px var(--ff-inter);
+      color: var(--content-secondary);
+    }
+  }
 }
+
+/* input[type="checkbox"]{
+  border: solid;
+  background-color: red;
+} */
 
 #check-lists.show-list{
   display: block;

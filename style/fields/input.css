@@ -23,3 +23,7 @@ input[type="text"]{
     color: var(--content-primary);
   }
 }
+
+/* input[type="checkbox"]{
+  border: solid;
+} */

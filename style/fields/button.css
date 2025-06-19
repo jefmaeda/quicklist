@@ -17,3 +17,10 @@ button[type="submit"]{
     background-color: var(--color-brand-hover);
   }
 }
+
+button[type="button"]{
+  padding: .5rem;
+  background-color: var(--bg-secondary);
+  cursor: pointer;
+  border: none;
+}
