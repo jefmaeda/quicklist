@@ -1,0 +1,20 @@
+footer{
+  background-color: var(--color-danger);
+  color: var(--always-white);
+  padding: .75rem;
+  border-radius: .75rem;
+  margin-top: 2rem;
+  
+  font: var(--fw-lg) var(--fs-mid)/20px var(--ff-inter);
+  justify-content: space-between;
+  
+  & .flex{
+    gap: .5rem;
+  }
+
+  & .close{
+    all: unset;
+    cursor: pointer;
+    height: 0px;
+  }
+}

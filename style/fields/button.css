@@ -18,7 +18,7 @@ button[type="submit"]{
   }
 }
 
-button[type="button"]{
+button[type="button"].delete-item{
   padding: .5rem;
   background-color: var(--bg-secondary);
   cursor: pointer;

@@ -2,6 +2,17 @@
 // Obtendo os elementos do formulario.
 const checkList = document.getElementById("check-lists")
 const form = document.querySelector("form")
+const input = document.getElementById("newItems")
+
+const footer = document.querySelector("footer")
+
+// Manipulando o input para receber somente letras.
+input.addEventListener("input", () => {
+  const onlyLettersRegex = /[0-9]/g
+  input.value = input.value.replace(onlyLettersRegex, "")
+})
+
+
 
 //adicionado
 let itemId = 0
@@ -9,14 +20,9 @@ let itemId = 0
 // Captando o evento de submit do formulario.
 form.onsubmit = (e) =>{
   e.preventDefault()
-
-  //Mostrar a lista
-  // checkList.classList.add("show-list") antes
-
-//depois adicionado
-const input = document.getElementById("newItens")
-const itemText = input.value.trim()
-
+  // const input = document.getElementById("newItens")
+  const itemText = input.value.trim()
+  
 if (itemText === "") {
   return
 }
@@ -54,7 +60,11 @@ document.addEventListener("click", (e) => {
     // Remove a list especifica
     if (list) {
       list.remove()
-      
+      footer.classList.remove("hidden")
     }
+  }
+
+  if (e.target.closest(".close")) {
+    footer.classList.add("hidden")
   }
 })

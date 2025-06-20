@@ -16,6 +16,10 @@
   gap: 1rem;
 }
 
+.hidden{
+  display: none;
+}
+
 .container{
   width: min(24em, 100% - 2rem*2);
   margin-inline: auto;
