@@ -19,11 +19,15 @@ let itemId = 0
 
 // Captando o evento de submit do formulario.
 form.onsubmit = (e) =>{
+  // Removendo o padão do carregamento do submit
   e.preventDefault()
-  // const input = document.getElementById("newItens")
+
+  // Removendo os espaços a redor do texto
   const itemText = input.value.trim()
   
+// Verificando se nada foi escrito
 if (itemText === "") {
+  alert("Por favor, digite algo.")
   return
 }
 
@@ -44,9 +48,11 @@ itemId++
     </button>
   `;
 
+  // Adicionando o HTML dentro do checkList
   checkList.appendChild(listItem);
-
-  input.value = ""; // limpa o campo
+  
+  // limpa o campo
+  input.value = ""; 
 
 }
 
